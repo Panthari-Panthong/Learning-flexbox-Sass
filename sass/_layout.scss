@@ -8,9 +8,10 @@
 }
 
 .header {
+  font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
-  border-bottom: var(--color--grey-2);
+  border-bottom: var(--line);
 
   display: flex;
   justify-content: space-between;
@@ -29,12 +30,36 @@
   //flex grow, flex shrink, flex base
   //flex grow don't want the element to grow if there's some space
   //flex shrink don;t want to shirk if there's not enough space
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .hotel-view {
-  background-color: orangered;
-  // background-color: #fff;
+  background-color: #fff;
   flex: 1;
   //the element should grow as much as it can
   //all the avialable space that it has
+}
+
+
+.detail {
+  font-size: 1.4rem;
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--color-grey-light-1);
+  border-bottom: var(--line);
+}
+
+
+.description {
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  flex: 0 0 60%;
+  margin-right: 4.5rem;
+}
+
+.user-reviews {
+  flex: 1;
 }
